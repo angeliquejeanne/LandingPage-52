@@ -1,0 +1,101 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+nav {
+    width: 100%;
+    height:70px;
+    background: transparent;
+    position: fixed;
+    transition: all 0.3s ease-out;
+}
+.anim-nav {
+    background: #333;
+    color: #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+}
+.liste {
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item {
+    margin: 0 10px;
+    font-size: 22px;
+}
+
+.home {
+    height: 100%;
+    background-image: url(fond.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-size: 150px;
+    padding-left: 100px;
+    padding-top: 200px;
+    color: #222;
+}
+
+p {
+    padding: 50px 100px;
+    text-align: justify;
+}
+
+/* Effet au clic */
+
+.clickAnim {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(to top, #ff4e50, #f9d423); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: absolute;
+    z-index: 9000;
+    transform: scale(0);
+    transform-origin: center;
+    animation: clickAnim 1s ease-in-out;
+}
+
+@keyframes clickAnim {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(2);
+        opacity: 1;
+    }
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+/* Anim input */
+
+label, input {
+    width: 500px;
+    margin: 5px auto;
+    display: block;
+}
+label {
+    margin-top: 35px;
+}
+input {
+    padding: 10px;
+    margin-bottom: 30px;
+    outline: none;
+    border: 1px solid #000;
+}
+
