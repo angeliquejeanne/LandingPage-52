@@ -17,9 +17,9 @@ nav {
     transition: all 0.3s ease-out;
 }
 .anim-nav {
-    background: #333;
-    color: #f1f1f1;
-    border-bottom: 1px solid #f1f1f1;
+    background: black;
+    color: snow;
+    border-bottom: 1px solid snow;
 }
 .liste {
     width: 100%;
@@ -60,7 +60,7 @@ p {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: linear-gradient(to top, #ff4e50, #f9d423); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(45deg, lime, magenta); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     position: absolute;
     z-index: 9000;
     transform: scale(0);
