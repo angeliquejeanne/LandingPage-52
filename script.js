@@ -1,30 +1,30 @@
-// const navigation = document.querySelector('nav');
+const navigation = document.querySelector('nav');
 
-// window.addEventListener('scroll', () => {
+window.addEventListener('scroll', () => {
 
-//     if(window.scrollY > 930){
-//         navigation.classList.add('anim-nav');
-//     } else {
-//         navigation.classList.remove('anim-nav');
-//     }
+    if(window.scrollY > 930){
+         navigation.classList.add('anim-nav');
+     } else {
+         navigation.classList.remove('anim-nav');
+     }
 
-// })
+ })
 
 // Anim click
 
-// window.addEventListener('click', (e) => {
-//     // console.log(e);
+ window.addEventListener('click', (e) => {
+      console.log(e);
 
-//     const rond = document.createElement('div');
-//     rond.className = 'clickAnim';
-//     rond.style.top = `${e.pageY - 50}px`;
-//     rond.style.left = `${e.pageX - 50}px`;
-//     document.body.appendChild(rond);
+     const rond = document.createElement('div');
+     rond.className = 'clickAnim';
+     rond.style.top = `${e.pageY - 50}px`;
+     rond.style.left = `${e.pageX - 50}px`;
+     document.body.appendChild(rond);
 
-//     setTimeout(() => {
-//         rond.remove();
-//     }, 1500)
-// })
+     setTimeout(() => {
+         rond.remove();
+     }, 1500)
+ })
 
 
 // Animation input
